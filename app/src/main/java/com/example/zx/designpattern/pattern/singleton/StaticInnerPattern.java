@@ -13,8 +13,8 @@ public class StaticInnerPattern {
 
     private StaticInnerPattern() { }
 
-    private static class Holder {
-        private static StaticInnerPattern instance = new StaticInnerPattern();
+    private static final class Holder {
+        private static final StaticInnerPattern instance = new StaticInnerPattern();
     }
 
     public static StaticInnerPattern getInstance() {
